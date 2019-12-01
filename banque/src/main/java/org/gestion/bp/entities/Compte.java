@@ -1,15 +1,30 @@
 package org.gestion.bp.entities;
 
+import javax.persistence.DiscriminatorColumn;
+import javax.persistence.DiscriminatorType;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
 
+@Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@DiscriminatorColumn(name = "TYPE_CPTE", discriminatorType = DiscriminatorType.STRING, length = 4)
 public class Compte implements Serializable {
-
+    @Id
     private String codeCompte;
     private Date dateCreation;
-    private double Solde;
+    private double solde;
+    @ManyToOne
+    @JoinColumn(name = "CODE_CLI")
     private Client client;
+    @ManyToOne
+    @JoinColumn(name = "CODE_EMP")
     private Employe employe;
     private Collection<Operation> operations;
 
@@ -30,11 +45,11 @@ public class Compte implements Serializable {
     }
 
     public double getSolde() {
-        return Solde;
+        return solde;
     }
 
     public void setSolde(double solde) {
-        Solde = solde;
+        solde = solde;
     }
 
     public Client getClient() {
@@ -67,6 +82,6 @@ public class Compte implements Serializable {
     public Compte(String codeCompte, Date dateCreation, double solde) {
         this.codeCompte = codeCompte;
         this.dateCreation = dateCreation;
-        Solde = solde;
+        this.solde = solde;
     }
 }
