@@ -1,7 +1,11 @@
 package org.gestion.bp.entities;
 
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
 import java.util.Date;
 
+@Entity
+@DiscriminatorValue(value = "CE")
 public class CompteEpargne extends Compte {
     private double taux;
 

@@ -1,11 +1,20 @@
 package org.gestion.bp.entities;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import java.io.Serializable;
 import java.util.Collection;
 
+@Entity
 public class Groupe implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long codeGroupe;
     private String nomGroupe;
+    @ManyToMany(mappedBy = "groupes")
     private Collection<Employe> employes;
 
     public Long getCodeGroupe() {

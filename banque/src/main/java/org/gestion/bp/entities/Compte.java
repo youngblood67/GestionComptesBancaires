@@ -3,11 +3,13 @@ package org.gestion.bp.entities;
 import javax.persistence.DiscriminatorColumn;
 import javax.persistence.DiscriminatorType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
@@ -26,6 +28,7 @@ public class Compte implements Serializable {
     @ManyToOne
     @JoinColumn(name = "CODE_EMP")
     private Employe employe;
+    @OneToMany(mappedBy = "compte", fetch = FetchType.LAZY)
     private Collection<Operation> operations;
 
     public String getCodeCompte() {
