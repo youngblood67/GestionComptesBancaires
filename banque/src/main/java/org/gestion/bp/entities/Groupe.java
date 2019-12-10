@@ -33,6 +33,14 @@ public class Groupe implements Serializable {
         this.nomGroupe = nomGroupe;
     }
 
+    public Collection<Employe> getEmployes() {
+        return employes;
+    }
+
+    public void setEmployes(Collection<Employe> employes) {
+        this.employes = employes;
+    }
+
     public Groupe() {
     }
 

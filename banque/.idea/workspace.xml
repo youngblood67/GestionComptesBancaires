@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e5a82c2a-ef98-4018-88b3-34dc141c520a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gestion/bp/dao/BanqueDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gestion/bp/metier/BanqueMetierImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gestion/bp/metier/IBanqueMetier.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Compte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Compte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/CompteCourant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/CompteCourant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/CompteEpargne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/CompteEpargne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Employe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Employe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gestion/bp/dao/IBanqueDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gestion/bp/dao/IBanqueDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Groupe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Groupe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Operation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Operation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Retrait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Retrait.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Versement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gestion/bp/entities/Versement.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,9 +17,24 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -66,7 +79,8 @@
       <option name="presentableId" value="Default" />
       <updated>1575150190255</updated>
       <workItem from="1575150198516" duration="1047000" />
-      <workItem from="1575152134458" duration="7040000" />
+      <workItem from="1575152134458" duration="11054000" />
+      <workItem from="1575869517293" duration="5399000" />
     </task>
     <task id="LOCAL-00001" summary="Ajout classes Employe et Groupe">
       <created>1575152307673</created>
@@ -89,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575234019366</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Configuration des entités avec @nnotations (Hibernate ORM) terminée">
+      <created>1575319190217</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575319190217</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,7 +121,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -110,7 +133,8 @@
     <MESSAGE value="Ajout classes Employe et Groupe" />
     <MESSAGE value="Suite Création des entités" />
     <MESSAGE value="Persistance des données : Client et Compte avec Hibernate ORM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Persistance des données : Client et Compte avec Hibernate ORM" />
+    <MESSAGE value="Configuration des entités avec @nnotations (Hibernate ORM) terminée" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuration des entités avec @nnotations (Hibernate ORM) terminée" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
